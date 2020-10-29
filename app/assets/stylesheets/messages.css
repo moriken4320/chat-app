@@ -108,7 +108,7 @@
   display: flex;
   background-color: white;
 }
-.form input{
+.form input[type="text"]{
   padding-left: 10px;
   height: 100%;
   width: 100%;
