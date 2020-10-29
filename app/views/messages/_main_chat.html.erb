@@ -8,32 +8,7 @@
     </div>
   </div>
   <div class="main_body">
-    <div class="massage_wrapper">
-      <div class="message_info">
-        <div class="messager">
-          Ken
-        </div>
-        <div class="message_date">
-          2020/10/28(wed) 12:43:30
-        </div>
-      </div>
-      <div class="message_text">
-        おはよう
-      </div>
-    </div>
-    <div class="massage_wrapper">
-      <div class="message_info">
-        <div class="messager">
-          Jen
-        </div>
-        <div class="message_date">
-          2020/10/28(wed) 12:43:30
-        </div>
-      </div>
-      <div class="message_text">
-        おはよう
-      </div>
-    </div>
+    <%= render partial: "message", collection: @messages %>
   </div>
   <%= form_with model: [@room, @message], class: "chat_bar", local: true do |f| %>
     <div class="form_wrapper">
