@@ -108,7 +108,10 @@
   display: flex;
   background-color: white;
 }
-.form input{
+.field_with_errors{
+  width: 100%; 
+}
+.form input[type="text"]{
   padding-left: 10px;
   height: 100%;
   width: 100%;
